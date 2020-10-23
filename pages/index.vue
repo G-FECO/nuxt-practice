@@ -4,6 +4,10 @@
     <el-button type="primary" round @click="goBucketPage">
       Log in with Google
     </el-button>
+    <br>
+    <el-button type="success" round @click="goChartPage">
+      Go Chart Page
+    </el-button>
   </div>
 </template>
 
@@ -17,6 +21,9 @@ export default {
   methods: {
     goBucketPage() {
       this.$router.push(`/buckets/@${this.user}`);
+    },
+    goChartPage() {
+      this.$router.push('/chart');
     }
   },
 }

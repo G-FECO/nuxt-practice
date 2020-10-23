@@ -1,7 +1,10 @@
 <template>
-  <div>
+  <div class="bucket-page">
     <div v-if="!isValid">유효하지 않는 주소입니다.</div>
-    <div v-else>{{ userId }}</div>
+    <div v-else>
+      <p>User Name: {{ userId }}</p>
+      
+    </div>
   </div>
 </template>
 
@@ -23,6 +26,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.bucket-page {
+  position: absolute;
+}
 </style>
